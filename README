@@ -1,0 +1,31 @@
+NAME
+
+  setup.sh - Linux configuration cloning script
+
+
+
+SYNOPSIS
+
+  setup.sh [path-to-your-locally-cached-repositories]
+
+
+
+DESCRIPTION
+
+  This little script, used for customizing Linux installs, can:
+    ~ install some of your favorite apps - Firefox, VLC, Pidgin, etc;
+    ~ setup terminal colors, aliases, etc;
+    ~ do some basic network config - set up routes, IP's, etc;
+    ~ customize the look & feel of your linux by adding new fonts, wallpapers, sounds, etc;
+    ~ set the default boot target;
+    ~ add some software package repositories for yum to use.
+
+
+
+NOTES
+
+  1. Should you have any multimedia (eg icons, sounds) you wish to install on the target system, put them in the relevant folders (eg icons/, sounds/), before running the script !
+
+  2. You can instruct yum to keep the packages it downloads by setting "keepcache=1" in "/etc/yum.conf".
+
+  3. This script was tested on Fedora 17.
